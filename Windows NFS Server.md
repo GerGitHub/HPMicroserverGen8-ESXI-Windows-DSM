@@ -10,20 +10,22 @@
 + HaneWin的设置用法
 + 例如:
 
-  D:\AA  -name:AA      -public -readonly -range 192.168.1.158 192.168.1.199  192.168.1.200-192.168.1.254
-   D:\AA是被共享的服务器端本地磁盘分区或文件夹名
-   -name:AA是NFS共享后分享出去的名称,名称可另设
-   -public表示启用WebNFS访问,DSM挂载时必须开启该项
-   -readonly表示仅以只读方式共享
-   -range 192.168.1.xxx-192.168.1.XXX表示仅对特定IP地址开放共享
-   -alldirs允许主机在文件系统中的任意位置安装。
-   -umask：<mask>设置文件系统上的组和世界权限的umask，默认为022
-   -lowercase将所有文件名映射到小写，否则保留。
-   -exec强制访问权限为所有文件的x位。
-   -mapall：<uid> [：<gid>]将所有的Unix user-id和group-id映射到指定的user-id和group-id。
-   -maproot：<uid> [：<gid>]将Unix超级用户根映射到指定的用户标识，group-id。没有映射条目根将映射到用户和组nobody
+      D:\AA  -name:AA      -public -readonly -range 192.168.1.158 192.168.1.199  192.168.1.200-192.168.1.254
+
+       D:\AA是被共享的服务器端本地磁盘分区或文件夹名
+       -name:AA是NFS共享后分享出去的名称,名称可另设
+       -public表示启用WebNFS访问,DSM挂载时必须开启该项
+       -readonly表示仅以只读方式共享
+       -range 192.168.1.xxx-192.168.1.XXX表示仅对特定IP地址开放共享
+       -alldirs允许主机在文件系统中的任意位置安装。
+       -umask：<mask>设置文件系统上的组和世界权限的umask，默认为022
+       -lowercase将所有文件名映射到小写，否则保留。
+       -exec强制访问权限为所有文件的x位。
+       -mapall：<uid> [：<gid>]将所有的Unix user-id和group-id映射到指定的user-id和group-id。
+       -maproot：<uid> [：<gid>]将Unix超级用户根映射到指定的用户标识，group-id。没有映射条目根将映射到用户和组nobody
 
 ## linux DSM 挂载NFS
+
 ### 挂载mount
 + 命令格式：
    mount [-t vfstype] [-o options] device dir
