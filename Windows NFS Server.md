@@ -57,6 +57,14 @@
 + 10  dir 设备在系统上的挂接点(mount point)。
   
 ### 卸载umount
++ 例如 /dev/hda5 已经挂载在/mnt/hda5上,用以下3种命令方法均可卸载挂载的文件系统
+
+      umount /dev/hda5
+      umount /mnt/hda5
+      umount /dev/hda5 /mnt/hda5
++ umount时如果显示 device busy 表示有文件正被调用运行, 如果知道正运行的文件可关闭退出文件再卸载, 如果用户不急于卸载，则可以用
+
+      umount -l /mnt/hda5   // 选项 –l 并不是马上umount，而是在该目录空闲后再umount。
 
 
 
