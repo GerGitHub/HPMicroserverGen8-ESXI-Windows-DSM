@@ -22,6 +22,19 @@ D:\AA  -name:AA      -public -readonly -range 192.168.1.158 192.168.1.199  192
    -mapall：<uid> [：<gid>]将所有的Unix user-id和group-id映射到指定的user-id和group-id。   
    -maproot：<uid> [：<gid>]将Unix超级用户根映射到指定的用户标识，group-id。没有映射条目根将映射到用户和组nobody    
 
++ 设置防火墙 111 1058 2049端口    
+ win7系统为例：   
+ 进入“控制面板”——》“系统安全”——》“windows防火墙”
+ ![入站规则01](https://github.com/GerGitHub/HPMicroserverGen8-ESXI-Windows-DSM/blob/master/VMImages/CS01.jpg)
+ ![入站规则01](https://github.com/GerGitHub/HPMicroserverGen8-ESXI-Windows-DSM/blob/master/VMImages/CS02.jpg)
+ ![入站规则01](https://github.com/GerGitHub/HPMicroserverGen8-ESXI-Windows-DSM/blob/master/VMImages/CS03.jpg)
+ ![入站规则01](https://github.com/GerGitHub/HPMicroserverGen8-ESXI-Windows-DSM/blob/master/VMImages/CS04.jpg)
+ ![入站规则01](https://github.com/GerGitHub/HPMicroserverGen8-ESXI-Windows-DSM/blob/master/VMImages/CS05.jpg)
+ ![入站规则01](https://github.com/GerGitHub/HPMicroserverGen8-ESXI-Windows-DSM/blob/master/VMImages/CS06.jpg)
+ 
+ 点击“下一步”后输入规则名称点击完成就OK了   
+ 接着建立UDP通信规则，再重复上面的步骤，就是倒数上面第三张截图这里选择“UDP”，端口号仍是填刚才填的，然后就能访问WIN7 资源了    
+
 ## linux DSM 挂载NFS
 
 ### 挂载mount
