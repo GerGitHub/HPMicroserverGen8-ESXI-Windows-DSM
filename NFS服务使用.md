@@ -26,17 +26,17 @@
 ## linux DSM 挂载NFS
 
 ### 挂载mount
-+ 命令格式：
-   mount [-t vfstype] [-o options] device dir
++ 命令格式：  
+ mount [-t vfstype] [-o options] device dir    
+ 例如: mount -t nfs 192.168.1.11:/Movie /volume1/Movie/
 　　
-+ 1  -t vfstype 指定文件系统的类型，通常不必指定。mount 会自动选择正确的类型。常用类型有：
-
-      光盘或光盘镜像：iso9660
-      DOS fat16文件系统：msdos
-      Windows 9x fat32文件系统：vfat
-      Windows NT ntfs文件系统：ntfs
-      Mount Windows文件网络共享：smbfs
-      UNIX(LINUX) 文件网络共享：nfs
++ 1  -t vfstype 指定文件系统的类型，通常不必指定。mount 会自动选择正确的类型。常用类型有：   
+光盘或光盘镜像：iso9660
+DOS fat16文件系统：msdos
+Windows 9x fat32文件系统：vfat
+Windows NT ntfs文件系统：ntfs
+Mount Windows文件网络共享：smbfs
+UNIX(LINUX) 文件网络共享：nfs
 
 + 2  -o options 主要用来描述设备或档案的挂接方式选项。使用多个-o参数的时候，-o只用一次，参数之间用半角逗号隔开：常用的参数有：
 
