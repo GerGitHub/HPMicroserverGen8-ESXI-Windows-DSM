@@ -1,4 +1,4 @@
-# DSM5.2修改MAC地址与SN      
+# 虚拟机DSM5.2修改MAC地址与SN      
 
 ### 本例是以VMDK分区镜像文件方式安装虚拟DSM, ESXI中建立或复制多个DSM时修改MAC和SN     
 
